@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineArchive | Movie Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-film logo-icon"></i>
+                    <div class="logo-text">CineArchive</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-view="browse"><i class="fas fa-compass"></i> Discover</a></li>
+                        <li><a href="#" class="nav-link" data-view="watchlist"><i class="fas fa-bookmark"></i> My Watchlist</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Discover Your Next Favorite Movie</h1>
+                <p>Explore thousands of films, create your personal watchlist, and never forget a movie again.</p>
+            </div>
+        </section>
+        
+        <section class="search-container">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for movies...">
+                    <button id="search-button"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="movies-container container">
+            <div id="browse-view" class="view active">
+                <div class="section-header">
+                    <h2 class="section-title">Popular Movies</h2>
+                    <div class="results-count" id="results-count">24 movies</div>
+                </div>
+                <div id="movies-grid" class="movies-grid">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading movies...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="watchlist-view" class="view">
+                <div class="section-header">
+                    <h2 class="section-title">My Watchlist</h2>
+                    <div class="watchlist-count" id="watchlist-count">0 movies</div>
+                </div>
+                <div id="watchlist-grid" class="movies-grid">
+                    <div class="empty-state">
+                        <i class="fas fa-film"></i>
+                        <h3>Your watchlist is empty</h3>
+                        <p>Start exploring movies and add them to your watchlist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-film"></i>
+                    <span>CineArchive</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
